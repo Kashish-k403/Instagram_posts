@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Edit the post</h1>
+    <h3>Post id: <%= post.id%></h3>
+    <h4>Post username: <%= post.username%></h4>
+
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+        <input type="file" name="image">
+        <input type="number" name="likes" value="<%= post.likes %>" >
+        <h4>Likes: <%=post.likes%></h4>
+        <h4>Comments: <%=post.comments%></h4>
+        <textarea rows="10" cols="35" name="bio"><%=post.bio%></textarea>
+        <button>Submit post</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing posts</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div>
+    <h1>Here is your post in detail</h1>
+    <p><%= post.id%></p>
+    <h4> Username:<%=post.username%></h4>
+    <h3>Name: <%=post.name%></h3>
+    <h2>Bio: <%=post.bio%></h2>
+    <img src="/uploads/<%= post.image %>" height="500px"; width="500">
+    </div>
+
+    <div>
+        <h4>Likes:<%=post.likes%></h4>
+        <h4>Comments:<%=post.comments%></h4>
+    </div>  
+</body>
+</html>

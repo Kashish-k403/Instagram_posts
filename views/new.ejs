@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your New Post</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Add Your New Post</h1>
+    <form method="post" action="/posts"  enctype="multipart/form-data">
+        <input placeholder="Enter username" name="username" type="text">
+        <input placeholder="Enter name" name="name" type="text">
+        <input placeholder="Enter password" name="password" type="password"><br><br>
+        <textarea placeholder="Write your Bio" name="bio"></textarea>
+        <input type="file" name="image">  
+        <button>Submit post</button>
+    </form>
+</body>
+</html>
